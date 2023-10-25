@@ -14,7 +14,7 @@ public class LoginTest {
 
        Configuration.browser = "firefox";
         open("https://qa.guru/cms/system/login/");
-        $("[name=email]").setValue("test@gmail.com");
+        $("[name=email]").setValue("test1@gmail.com");
         $("[name=password]").setValue("123").pressEnter();
         $(".btn-success").shouldHave(text("Неверный пароль"));
     }
